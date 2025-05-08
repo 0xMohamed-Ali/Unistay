@@ -1,0 +1,117 @@
+/* Basic Styling */
+.text-slate-200 {
+    color: #e5e7eb;
+  }
+  
+  footer {
+    background-color: #1f2937; 
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 10rem;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 0.75rem;
+  }
+  
+  .footer-section a {
+    color: #a1a1aa;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: #fff;
+  }
+  
+  .icon-box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #4b5563;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .icon-box:hover {
+    background-color: #023681;
+  }
+  
+  .icon-box svg {
+    /* color: white; */
+    font-size: 1.75rem;
+  }
+  
+  .subscribe-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  
+  .subscribe-container input {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    border: 1px solid #4b5563;
+    background-color: transparent;
+    color: #e5e7eb;
+  }
+  
+  .subscribe-container button {
+    margin-left: -2px;
+    padding: 0.5rem 1.5rem;
+    background-color: #ff9000;
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  
+  .subscribe-container button:hover {
+    background-color: #023681;
+  }
+  
+  .footer-bottom {
+    padding-top: 1rem;
+    text-align: center;
+    border-top: 1px solid #4b5563;
+    color: #a1a1aa;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.875rem;
+  }
+  
+  .footer-bottom .text-primary {
+    color: #3b82f6;
+  }
+ 
+  span{
+    color:#ff9000;
+     font-size: x-large;
+    text-decoration: underline;
+  }

@@ -1,0 +1,14 @@
+@import "tailwindcss/preflight";
+ @import "tailwindcss/utilities";
+ /* .icon-box {
+    @apply grid flex-shrink-0 rounded-full  place-items-center hover:bg-slate-200 dark:hover:bg-hover-color-dark transition-a  ;
+  }   */
+
+  /* ✔️ صح */
+@media (min-width: 640px) {
+  .some-class {
+    cursor: pointer;
+    /* w-9 h-9  */
+  }
+}
+ 

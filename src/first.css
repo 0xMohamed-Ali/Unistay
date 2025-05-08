@@ -1,0 +1,136 @@
+ /*            start */
+ .dark-mode-wrapper {
+    background-color: black;
+  }
+  
+  .light-mode-wrapper {
+    background-color: white;
+  }
+  
+  .hero-section {
+    width: 95%;
+    height: 600px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2.5rem;
+    gap: 1.75rem;
+    z-index: 20;
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-section {
+      padding-left: 7rem;
+    }
+  }
+  
+  .hero-title {
+    color: white;
+    font-size: 3.75rem;
+    font-weight: 600;
+    line-height: 60px;
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-title {
+      padding-right: 500px;
+      line-height: 70px;
+    }
+  }
+  
+  .hero-description {
+    color: white;
+    font-size: 1.25rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .hero-description {
+      padding-right: 500px;
+    }
+  }
+  
+  .dark-bg {
+    background-color: black;
+  }
+  
+  .light-bg {
+    background-color: transparent;
+  }
+  
+  .form-container {
+    width: 100%;
+    max-width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: -3.5rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .form-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .dark-form {
+    background-color: #1f2937; /* dark gray */
+  }
+  
+  .form-item {
+    width: 100%;
+  }
+  
+  .form-label {
+    font-weight: 600;
+    color: black;
+  }
+  
+  .dark-form .form-label {
+    color: white;
+  }
+  
+  .form-input,
+  .form-select {
+    background-color: white;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    border-bottom: 1px solid #c9c7c1;
+    font-size: 1rem;
+    color: #4b5563; /* gray-500 */
+  }
+  
+  .submit-button {
+    background-color: #dc2626; /* red-600 */
+    color: white;
+    font-size: 1.125rem;
+    padding: 1rem;
+    width: 100%;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: black;
+    transform: scale(1.1);
+  }
+  
+  .dark-form .submit-button {
+    background-color: #b91c1c; /* red-700 */
+  }
+  
+  .dark-form .submit-button:hover {
+    background-color: white;
+    color: black;
+  }
+  

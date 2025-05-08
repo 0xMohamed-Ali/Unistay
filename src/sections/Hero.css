@@ -1,0 +1,224 @@
+  
+  /* ========== الوضع الداكن والفاتح ========== */
+.dark-mode-wrapper {
+  background-color: black;
+}
+
+.light-mode-wrapper {
+  background-color: white;
+}
+
+/* ========== إعداد خلفية الصفحة بالكامل ========== */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh; /* تصحيح الخطأ هنا */
+  background: url('heroimg') no-repeat center center/cover;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* ========== قسم الهيرو ========== */
+.hero-section {
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 2.5rem;
+  gap: 1.75rem;
+  
+  background: #08244d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  z-index: 20;
+}
+
+/* ؟=       زززز */
+
+
+
+
+
+
+
+.hero-section {
+  position: relative; /* مهم عشان الطبقة تبقى فوقها */
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(8, 34, 62, 0.6); /* طبقة شفافة مزرقة */
+  z-index: 1;
+}
+
+/* نرفع النصوص فوق الطبقة */
+.hero-section h1,
+.hero-section p {
+  position: relative;
+  z-index: 2;
+}
+
+ 
+
+/* ىىىةةوو */
+
+@media (min-width: 1024px) {
+  .hero-section {
+    padding-left: 7rem;
+  }
+}
+
+/* ========== العنوان والوصف ========== */
+.hero-title {
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 60px;
+  
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    padding-right: 500px;
+    line-height: 70px;
+  }
+}
+
+.hero-description {
+  color: white;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-description {
+    padding-right: 500px;
+  }
+}
+
+/* ========== الفورم ========== */
+.form-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: -3.5rem auto 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.4); /* شفافية خفيفة */
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  .form-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.form-item {
+  width: 100%;
+}
+
+.form-label {
+  font-weight: 600;
+  color: white;
+}
+
+.form-input,
+.form-select {
+  background-color: white;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  border: 1px solid #c9c7c1;
+  font-size: 1rem;
+  color: #4b5563;
+  border-radius: 6px;
+}
+
+.submit-button {
+  background-color: #ff9000;
+  color: white;
+  font-size: 1.125rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.submit-button:hover {
+  background-color: black;
+  transform: scale(1.1);
+}
+
+.dark-form {
+  background-color: #1f2937;
+}
+
+.dark-form .form-label {
+  color: white;
+}
+
+.dark-form .submit-button {
+  background-color: #b91c1c;
+}
+
+.dark-form .submit-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ========== تحسين إضافي لعناوين أو عناصر ========== */
+strong {
+  color: #ff9000;
+}
+
+#title {
+  background-image: linear-gradient(to top, orange 70%, transparent 30%);
+  background-size: 22% 0.8em;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+@media (max-width: 768px) { /* للأجهزة التي تكون عرضها أقل من أو يساوي 768px */
+  #title {
+    background-size: 40% 1em; /* يمكن تعديل هذه النسب حسب الحاجة */
+  }
+}
+#here {
+  color: #ff9000;
+  font-size: 1.5rem;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* ========== الحركة ========== */
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body{
+  background-color: #08244d;
+  padding: 0;
+  margin: 0;
+}
