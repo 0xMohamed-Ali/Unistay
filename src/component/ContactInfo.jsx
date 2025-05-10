@@ -2,7 +2,7 @@
 import React from 'react';
 import { BiMap } from "react-icons/bi";
 import { FiMail, FiPhone } from "react-icons/fi";
-import './ContactInfo.css';
+import "./ContactInfo.css";
 
 const ContactInfo = () => {
   return (
