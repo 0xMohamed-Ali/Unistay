@@ -1,139 +1,137 @@
-  
-   .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    /* padding: 1rem 1.5rem; */
-    position: sticky;
-    top: 0;
-    z-index: 30;
-   
-    
-   
-        padding-top: 0.25rem;
-        padding-bottom: 0.25rem;
-      
-  }
-  
-  .light {
-    background-color: #08244d;
-    
-  }
-  
-  .dark {
-    background-color: black;
-  }
-  
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  /* padding: 1rem 1.5rem; */
+  position: sticky;
+  top: 0;
+  z-index: 30;
+
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.light {
+  background-color: #08244d;
+}
+
+.dark {
+  background-color: black;
+}
+
+.logo-img {
+  width: 50px;
+  /* height: auto; */
+  background: transparent;
+  height: 60px;
+}
+
+@media (min-width: 1024px) {
   .logo-img {
-    width: 120px;
-    /* height: auto; */
-    background:transparent;
-    height: 100px;
-     
+    width: 180px;
   }
-  
-  @media (min-width: 1024px) {
-    .logo-img {
-      width: 180px;
-    }
-  }
-  
+}
+
+.nav-items.desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
   .nav-items.desktop {
-    display: none;
-  }
-  
-  @media (min-width: 1024px) {
-    .nav-items.desktop {
-      display: flex;
-      gap: 2rem;
-    }
-  }
-  
-  .nav-item {
-    /* color: black; */
-    color: #ffffff;
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 600; 
-    
-    cursor: pointer;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.5rem;
-  }
-  
-  .dark .nav-item {
-    color: white;
-  }
-  
-  .nav-item:hover {
-    background-color:#ff9000;
-    color: white;
-  }
-  
-  .menu-icon {
     display: flex;
-    align-items: center;
-    cursor: pointer;
-    
+    gap: 2rem;
   }
-  
-  .icon {
-    font-size: 1.5rem;
-    /* color: black; */
-    color:#ff9000;
-  }
-  
-  .dark .icon {
-    color: white;
-  }
-  
-  .mobile-menu {
-    display: none;
-  }
-  
-  .mobile-menu.show {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: #1e293b; /* slate-800 */
-    padding: 1rem;
-    position: absolute;
-    top: 80px;
-    left: 0;
+}
+
+.nav-link {
+  /* color: black; */
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.dark .nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #ff9000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.5rem;
+  /* color: black; */
+  color: #ff9000;
+}
+
+.dark .icon {
+  color: white;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.show {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #1e293b; /* slate-800 */
+  padding: 1rem;
+  position: absolute;
+  top: 80px;
+  left: 0;
   /* color:  #ff9000; */
-  }
-  
-  .mobile-nav-item {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    text-align: center;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-  }
-  
-  .mobile-nav-item:hover {
-    background-color:#ff9000;
-    color: black;
-  }
-  
-  .contact-info {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .contact-info span {
-    font-weight: 600;
-    color: white;
-    font-size: 1rem;
-    text-decoration: none;
-  }
-  
-  .phone-icon, .user-icon {
-    font-size: 1.25rem;
-    color:#ff9000;
-  }
-  
+}
+
+.mobile-nav-link {
+  color: #ff9000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.mobile-nav-link:hover {
+  background-color: #ff9000;
+  color: white;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info span {
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.phone-icon,
+.user-icon {
+  font-size: 1.25rem;
+  color: #ff9000;
+}
+/* ظظظظظظظظ */

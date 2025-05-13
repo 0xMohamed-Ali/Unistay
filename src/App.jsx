@@ -1,49 +1,43 @@
-
-// import { Routes, Route  } from 'react-router-dom';
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import { DarkModeProvider } from './component/Darkmode';
-import About from './pages/About'
+//import About from './pages/About';
+import About from './component/About'
 import Hero from './sections/Hero';
-import Header from './component/Header';
-import About from './pages/About';
 import Services from './component/Services';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Footer from './component/Footer';
-import './index.css'; 
+import Map from './component/Map';
 import Form from './component/Form';
 import ContactInfo from './component/ContactInfo';
-import Map from './component/Map';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
- 
- 
-//import './sections/Hero.css'
-//import './first.css'
+import Header from './component/Header';
+import Footer from './component/Footer';
+import './component/about.css'
+ import Popular from './component/Popular'
 const App = () => {
-
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+  const [currentPage, setCurrentPage] = useState('home');
+  
 
   return (
     <DarkModeProvider>
-     
-      <Header />
-      <Hero />
-    {/* <div>
-      <nav className="p-4 bg-gray-200">
-        <Link to="/" className="mr-4">Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </div> */}
-      {/* مكونات إضافية خارج السياق */}
-      <Map />
-      <Form />
-      <ContactInfo />
+      <Header setCurrentPage={setCurrentPage} />
+      
+      {currentPage === 'home' && (
+        <>
+          <Hero />\
+
+              <About />
+          <Services />
+          <Popular />
+       
+          <Map />
+          <Form />
+          <ContactInfo />
+        </>
+      )}
+      
+      {currentPage === 'about' && <About goHome={() => setCurrentPage('home')} />}
+        {currentPage === 'services' && <Services goHome={() => setCurrentPage('home')} />}
+      {currentPage === 'ContactInfo' && <ContactInfo goHome={() => setCurrentPage('home')} />}
+        {currentPage === 'Popular' && <Popular goHome={() => setCurrentPage('home')} />}
+      
       <Footer />
     </DarkModeProvider>
   );

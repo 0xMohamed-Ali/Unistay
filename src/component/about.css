@@ -1,0 +1,518 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* ////// */
+
+/*
+ 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh; /* تصحيح الخطأ هنا *//*
+  background:red  no-repeat center center/cover;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+.about-container {
+  font-family: sans-serif;
+  color: #333;
+ text-align: center;
+   
+   
+}
+
+.about-hero {
+  background-color: #1e3a8a;
+  color: black;
+  text-align: center;
+  /* padding: 10px 20px; *//*
+  width: 50%;
+  border-radius: 10px;
+}
+
+.about-hero h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.about-hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-section {
+  padding: 60px 20px;
+  /* max-width: 1000px; *//*
+  margin: 0 auto;
+  margin-top: 0;
+}
+u {
+  text-decoration-color: #ff9000;
+}
+
+.about-row {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f4f6;
+  padding-left: 0px;
+}
+
+@media (min-width: 768px) {
+  .about-row {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.about-image {
+  /* max-width: 100%; *//*
+  height: 600px;
+  margin: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  width: 80%;
+  margin-left: 100px;
+  position: relative;
+  padding-right: 100px;
+}
+
+.about-text h2 {
+  color: #1e3a8a;
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  margin-bottom: 16px;
+  font-size: 25px;
+  color: black;
+}
+.Icons {
+  display: flex;
+  justify-content: space-between;
+}
+.about1_icon {
+  display: flex;
+  justify-content: space-between;
+}
+.about1_icon p {
+  font-weight: bold;
+  margin-left: 10px;
+}
+.about1_icon img {
+  width: 100px;
+}
+.about-text ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: black;
+}
+
+.text-primary {
+  color: #1e3a8a;
+}
+
+.icon {
+  width: 80px; /* Adjust icon size *//*
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.bg-primary {
+  background-color: #1e3a8a !important;
+}
+
+.text-warning {
+  color: #ff9000;
+}
+
+.housing-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .about-image {
+    height: auto;
+  }
+}
+
+/* ///// *//*
+.section2 {
+  background-color: #f3f4f6;
+  width: 80%;
+}
+.bg-light {
+  background-color: #f8f9fa !important;
+
+  margin: 20px;
+  display: flex;
+  color: #000;
+  padding: 10px;
+}
+.about2_h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.about2_image {
+  display: flex;
+  margin: 10px;
+}
+.about2_image p {
+  padding-left: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.image3 {
+  height: 500px;
+  width: 100%;
+  width: 90%;
+}
+.bg-light p {
+  padding-bottom: 30px;
+  margin-top: 10px;
+}
+.desc-items {
+  font-size: 20px;
+  line-height: 3;
+  padding: 10px;
+}
+.about3 {
+  display: flex;
+  margin: 20px;
+}
+.desc3 {
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+.image4 {
+  width: 1000px;
+}
+.desc3 h3 {
+  font-size: 50px;
+  font-weight: bold;
+}
+.about3 p {
+  padding: 20px;
+  font-size: 20px;
+} */
+
+
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  /* background-color: #f8f9fa; */
+ 
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+    color: #f9f9f9;
+}
+
+/* Section 1 - Hero Section */
+.about-section {
+  width: 100%;
+  padding: 40px 20px;
+  color: #f9f9f9;
+}
+
+.about-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.about-hero {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  /* background-color: #1e3a8a; */
+   background-color: #f9f9f9;
+ /* height: 400px; */
+  color: white;
+  text-align: center;
+  padding: 6px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.about-text h2 {
+  /* color: #1e3a8a; */
+  color:#ff9000;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color:#f9f9f9;
+  margin-bottom: 20px;
+}
+
+.Icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.about1_icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about1_icon p {
+  font-weight: bold;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.about1_icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.about-text ul {
+  list-style-position: inside;
+  margin-bottom: 20px;
+}
+
+.about-text li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  /* color: #333; */
+  color: #f9f9f9;
+}
+
+/* Section 2 - Housing Section */
+.bg-light {
+  width: 100%;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  gap: 40px;
+}
+
+.bg-light > div {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about2_h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.text-warning {
+  color: #ff9000;
+}
+
+.about2_image {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.about2_image p {
+  font-weight: bold;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.image3 {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.bg-primary {
+  background-color: #1e3a8a !important;
+  padding: 30px !important;
+  border-radius: 8px;
+  color: white !important;
+}
+
+.desc-items {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Section 3 - Knowledge Exchange */
+.about3 {
+  background-color: #f9f9f9;
+  color: black;
+  width: 100%;
+  max-width: 1400px;
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+ 
+.about3 > div {
+  flex: 1;
+  min-width: 300px;
+  
+}
+
+.image4 {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.desc3 {
+  padding: 20px;
+}
+
+.desc3 h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-text h2 {
+    font-size: 1.5rem;
+  }
+  
+  .about2_h3, .desc3 h3 {
+    font-size: 1.5rem;
+  }
+  
+  .about-text p, .about2_image p {
+    font-size: 1rem;
+   
+  }
+  
+  .about1_icon img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .bg-light, .about3 {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 20px;
+  }
+  
+  .Icons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .about2_image {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+#paragraph{
+  color: black;
+   font-size: large;
+}

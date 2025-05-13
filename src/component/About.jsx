@@ -2,14 +2,15 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Image1 from "./images/about_image1.jpg";
-import Image2 from "./images/house1.jpg";
-import Image3 from "./images/hous2.jpg";
-import Image4 from "./images/about3.jpg";
-import icon1 from "./images/house_icon.jpg";
-import icon2 from "./images/book_icon.jpg";
-import icon3 from "./images/photo_2025-04-30_17-48-49.jpg";
-import icon4 from "./images/knowledge.jpg";
+import Image1 from "../assets/images/about_image1.jpg";
+import Image2 from "../assets/images/house1.jpg";
+import Image3 from "../assets/images/hous2.jpg";
+import Image4 from "../assets/images/about3.jpg";
+import icon1 from "../assets/images/house_icon.jpg";
+import icon2 from "../assets/images/book_icon.jpg";
+import icon3 from "../assets/images/photo_2025-04-30_17-48-49.jpg";
+import icon4 from "../assets/images/knowledge.jpg";
+import './about.css'
 
 const About = () => {
   useEffect(() => {
@@ -17,7 +18,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="container py-5">
+    <div className="container ">
       {/* Section 1 */}
       <section className="about-section">
         <div className="about-row">
@@ -72,30 +73,30 @@ const About = () => {
       </section>
 
       {/* Section 2 */}
-      <div className="row bg-light py-5" data-aos="fade-down">
+      <div className="bg-light" data-aos="fade-down">
         <div className="col-md-6 mb-4 mb-md-0">
-          <h3 className="fw-bold text-dark highlight-text">
+          <h3 className="about2_h3">
             Find and share <span className="text-warning">housing</span>{" "}
             effortlessly with verified students.
           </h3>
-          <div className="d-flex align-items-center my-3">
-            <img src={icon3} alt="" width="80" className="me-3" />
-            <p className="fw-bold mb-0">
+          <div className="about2_image">
+            <div><img src={icon3} alt="" width="80" /></div>
+            <div><p className="fw-bold mb-0"  id="paragraph">
               Find Your Perfect Student <br />
               Home with Ease
-            </p>
+            </p></div>
           </div>
-          <p>
+          <p  id="paragraph">
             SwapLearn helps university students find safe, affordable, and
             comfortable housing. Whether you’re looking for a shared apartment
             or a private room, we make the search easy and reliable.
           </p>
-          <img src={Image3} alt="" className="img-fluid rounded shadow mt-3" />
+          <img src={Image3} alt="" class="image3"/>
         </div>
         <div className="col-md-6 text-white bg-primary p-4 rounded shadow">
           <img src={Image2} alt="" className="img-fluid rounded mb-3" />
           <div>
-            <p className="fs-5">
+            <p className="desc-items">
               🔹 Verified Listings – Safe and trusted accommodations.
               <br />
               🔹 Student-Friendly Prices – Affordable housing options.
@@ -108,33 +109,33 @@ const About = () => {
       </div>
 
       {/* Section 3 */}
-      <div className="row align-items-center py-5" data-aos="zoom-in">
-        <div className="col-md-6 mb-4 mb-md-0">
+      <div className="about3" data-aos="zoom-in">
+        <div >
           <img
             src={Image4}
             alt=""
-            className="img-fluid rounded shadow-lg transform-scale"
+            className="image4"
           />
         </div>
-        <div className="col-md-6">
+        <div className="desc3">
           <h3 className="text-center fw-bold mb-3 text-shadow">
             <span className="text-warning">Offer</span> and receive free courses
             to enhance your skills.
           </h3>
-          <div className="d-flex align-items-center mb-3">
-            <img src={icon4} alt="" width="80" className="me-3" />
-            <p className="fw-bold mb-0">
+          <div className="about2_image">
+          <div>  <img src={icon4} alt="" width="80"  /></div>
+           <div> <p className="fw-bold mb-0" id="paragraph">
               Knowledge Exchange –<br />
               Learn and Share for Free!
-            </p>
-          </div>
-          <p>
+            </p></div>
+          </div >
+          <p id="paragraph"> 
             We believe that knowledge should be accessible to everyone —
             regardless of background, location, or budget. That's why we created
             a platform where people can share what they know, and learn what
             they need — all for free.
           </p>
-          <p>
+          <p id="paragraph">
             You can enjoy the same seamless learning experience whether you're
             using a mobile device, a desktop, or browsing the web. Our platform
             supports this flexibility, ensuring that learning is always at your

@@ -20,7 +20,7 @@ const ContactInfo = () => {
           <FiMail />
         </div>
         <h1 className="contact-title">Email Address</h1>
-        <p>martvilla@gmail.com</p>
+        <p>swaplearna@gmail.com</p>
         <p>wabwenib66@gmail.com</p>
       </div>
       <div className="contact-box">
@@ -28,8 +28,8 @@ const ContactInfo = () => {
           <BiMap />
         </div>
         <h1 className="contact-title">Office Address</h1>
-        <p>Lumumu Street Plot 3943, Kampala, Uganda</p>
-        <p>Horizon Street, Middle Avenue, USA</p>
+        <p>Tunis  Plot 3943, Kampala, Uganda</p>
+        <p>Horizon Street, Middle Avenue, Egypt</p>
       </div>
     </div>
   );

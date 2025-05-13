@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import { FaXmark, FaBars } from 'react-icons/fa6';
 import { FaPhoneAlt, FaUserCircle } from 'react-icons/fa';
@@ -7,7 +6,7 @@ import logo from '../assets/images/logo.png';
 import { useDarkMode } from './Darkmode';
 import './Header.css';
 
-const Header = () => {
+const Header = ({ setCurrentPage }) => {
   const { darkMode } = useDarkMode();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -15,12 +14,19 @@ const Header = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   const navItems = [
-    { label: 'Home', path: 'hero', isRoute: false },
-    { label: 'About', path: '/about', isRoute: true },
-    { label: 'Services', path: 'services', isRoute: false },
-    { label: 'Blog', path: 'blog', isRoute: false },
-    { label: 'Contact', path: 'ContactInfo', isRoute: false },
+    { label: 'Home', path: 'home', isRoute: true },
+    { label: 'About', path: 'about', isRoute: true },
+    { label: 'Services', path: 'services', isRoute: true },
+    { label: 'Popular', path: 'Popular', isRoute: true },
+    { label: 'Contact', path: 'ContactInfo', isRoute: true},
   ];
+
+  const handleClick = (path, isRoute) => {
+    if (isRoute) {
+      setCurrentPage(path);
+    }
+    closeMenu();
+  };
 
   return (
     <nav className={`navbar ${darkMode ? 'dark' : 'light'}`}>
@@ -30,32 +36,29 @@ const Header = () => {
 
       {/* Desktop Menu */}
       <ul className="nav-items desktop">
-        {navItems.map(({ label, path, isRoute }) =>
-          isRoute ? (
-            <RouterLink
-              key={path}
-              to={path}
-              className="nav-item"
-              onClick={closeMenu}
-            >
-              {label}
-            </RouterLink>
-          ) : (
-            <ScrollLink
-              key={path}
-              to={path}
-              smooth={true}
-              offset={-100}
-              duration={500}
-              className="nav-item"
-              activeClass="active"
-              spy={true}
-              onClick={closeMenu}
-            >
-              {label}
-            </ScrollLink>
-          )
-        )}
+        {navItems.map(({ label, path, isRoute }) => (
+          <li
+            key={path}
+            onClick={() => handleClick(path, isRoute)}
+            className="nav-item"
+          >
+            {!isRoute ? (
+              <ScrollLink
+                to={path}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="nav-link"
+                activeClass="active"
+                spy={true}
+              >
+                {label}
+              </ScrollLink>
+            ) : (
+              <span className="nav-link">{label}</span>
+            )}
+          </li>
+        ))}
       </ul>
 
       {/* Mobile Menu Icon */}
@@ -64,33 +67,31 @@ const Header = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`mobile-menu ${isMenuOpen ? 'show' : ''}`} onClick={closeMenu}>
+      <div className={`mobile-menu ${isMenuOpen ? 'show' : ''}`}>
         <ul>
-          {navItems.map(({ label, path, isRoute }) =>
-            isRoute ? (
-              <RouterLink
-                key={path}
-                to={path}
-                className="mobile-nav-item"
-                onClick={closeMenu}
-              >
-                {label}
-              </RouterLink>
-            ) : (
-              <ScrollLink
-                key={path}
-                to={path}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                className="mobile-nav-item"
-                spy={true}
-                onClick={closeMenu}
-              >
-                {label}
-              </ScrollLink>
-            )
-          )}
+          {navItems.map(({ label, path, isRoute }) => (
+            <li
+              key={path}
+              onClick={() => handleClick(path, isRoute)}
+              className="mobile-nav-item"
+            >
+              {!isRoute ? (
+                <ScrollLink
+                  to={path}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                  className="mobile-nav-link"
+                  activeClass="active"
+                  spy={true}
+                >
+                  {label}
+                </ScrollLink>
+              ) : (
+                <span className="mobile-nav-link">{label}</span>
+              )}
+            </li>
+          ))}
         </ul>
       </div>
 
